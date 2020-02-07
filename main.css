@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+#logo {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.headTitle {
+  float: right;
+  margin-right: 1em;
+  font-family: "Lucida Grande";
+}
+
+#cover {
+  color: white;
+  height: auto;
+  background-color: black;
+  /*background-image: ????? ;*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.slider {
+  width: 50%;
+}
+
+.slider img {
+  width: 100%;
+  z-index: 1;
+}
+
+/*slick setting*/
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+#cover__title {
+  font-size: 36px;
+  letter-spacing: 10px;
+  position: absolute;
+  z-index: 2;
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#minitheater-list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.minitheater-item {
+  width: 25%;
+  /*width: 270px;*/
+  margin: 15px;
+  float: left;
+  background-color: white;
+  border: solid 1px #ddd;
+}
+
+.minitheater-item__image-wrapper {
+  width: 25%;
+  height: 270px;
+  padding: 10px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.minitheater-item__image {
+  max-height: 250px;
+  max-width: 250px;
+  vertical-align: middle;
+}
+
+.minitheater-item__detail {
+  padding: 10px;
+  background-color: #fafafa;
+  border-top: solid 1px #ddd;
+}
+
+.minitheater-item__title {
+  margin: 0 auto;
+  height: 36px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.minitheater-item__address {
+  margin: 0 auto;
+  height: 40px;
+  text-align: left;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.minitheater-item__link {
+  margin: 0 auto;
+  height: 40px;
+  text-align: left;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.minitheater-item__map-wrapper1,
+.minitheater-item__map-wrapper2,
+.minitheater-item__map-wrapper3,
+.minitheater-item__map-wrapper4,
+.minitheater-item__map-wrapper5,
+.minitheater-item__map-wrapper6,
+.minitheater-item__map-wrapper7,
+.minitheater-item__map-wrapper8,
+.minitheater-item__map-wrapper9 {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.modal-map-wrapper {
+height: 0;
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+}
+.modal-map-wrapper map1 {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
