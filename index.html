@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>東京ミニシアターMAP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesomeのアイコンフォント -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- 自サイトのCSS -->
+  <link rel="stylesheet" href="main.css">
+  <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="slick/slick.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+</head>
+
+<body>
+  <!-- 最初のローディング表示 -->
+  <!--<section id="loading" class="view">-->
+  <!--  <i class="initial-loading-icon fas fa-sync" aria-hidden="true"></i>-->
+  <!--</section>-->
+  <!-- /#loading -->
+
+  <!-- 映画館一覧画面 -->
+  <section id="minitheaterlist" class="view">
+
+    <header>
+      <div id="header">
+        <div id="logo">
+          <!--<a href="./minitheaterlist_index.php"-->
+          <a href="./index.html"><img src="./images/icon.png" alt="minitheaterlist"></a>
+        </div>
+        <div class="headTitle">東京ミニシアターMAP</div>
+      </div>
+    </header>
+    <div id="cover">
+      <div class="slider">
+        <div><a href="#"><img src="images/uplinkshibuya.jpeg" alt="uplinkshibuya"></a></div>
+        <div><a href="#"><img src="images/uplinkkitijoji.jpg" alt="uplinkkitijoji"></a></div>
+        <div><a href="#"><img src="images/ebisu.jpg" alt="恵比寿ガーデンシネマ"></a></div>
+        <div><a href="#"><img src="images/shimokitazawa.jpg" alt="下北沢トリウッド"></a></div>
+      </div>
+      <h1 id="cover__title">東京ミニシアターMAP</h1>
+    </div>
+    <div class="wrapper">
+      <div id="main">
+        <div id="minitheater-list" class="clearfix">
+          <!-- 映画館リストここから -->
+
+          <!-- アップリンク渋谷-->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/uplinkshibuya.jpeg" alt="アップリンク渋谷">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">アップリンク渋谷</h4>
+              <div class="minitheater-item__address">〒150-0042 東京都渋谷区37 宇田川町37−18トツネビル1-2F</div>
+              <div class="minitheater-item__link"><a href="https://shibuya.uplink.co.jp/">https://shibuya.uplink.co.jp/</a></div>
+              <div class="minitheater-item__map-wrapper1">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- アップリンク吉祥寺-->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/uplinkkitijoji.jpg" alt="アップリンク吉祥寺">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">アップリンク吉祥寺</h4>
+              <div class="minitheater-item__address">〒180-8520 東京都武蔵野市吉祥寺本町1丁目5-1 パルコ地下2F</div>
+              <div class="minitheater-item__link"><a href="https://joji.uplink.co.jp/">https://joji.uplink.co.jp/</a></div>
+              <div class="minitheater-item__map-wrapper2">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 恵比寿ガーデンシネマ-->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/ebisu.jpg" alt="恵比寿ガーデンシネマ">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">恵比寿ガーデンシネマ</h4>
+              <div class="minitheater-item__address">〒150-0013 東京都渋谷区恵比寿4-20-2 恵比寿ガーデンプレイス内</div>
+              <div class="minitheater-item__link"><a href="https://www.unitedcinemas.jp/yebisu/index.html">https://www.unitedcinemas.jp/yebisu/index.html</a></div>
+              <div class="minitheater-item__map-wrapper3">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- シネスイッチ銀座 -->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/ginza.jpg" alt="シネスイッチ銀座">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">シネスイッチ銀座</h4>
+              <div class="minitheater-item__address"> 東京都中央区銀座4-4-5 旗ビル</div>
+              <div class="minitheater-item__link"><a href="http://www.cineswitch.com/">http://www.cineswitch.com/</a></div>
+              <div class="minitheater-item__map-wrapper4">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+          <!-- 神保町シアター -->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/jinnboucho.jpg" alt="神保町シアター">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">神保町シアター</h4>
+              <div class="minitheater-item__address"> 東京都千代田区神田神保町1-23</div>
+              <div class="minitheater-item__link"><a href="https://www.shogakukan.co.jp/jinbocho-theater/">https://www.shogakukan.co.jp/jinbocho-theater/</a></div>
+              <div class="minitheater-item__map-wrapper5">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+          <!-- ポレポレ東中野 -->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/porepore.jpg" alt="ポレポレ東中野">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">ポレポレ東中野</h4>
+              <div class="minitheater-item__address"> 〒164-0003　東京都中野区東中野4-4-1　ポレポレ坐ビル地下</div>
+              <div class="minitheater-item__link"><a href="hhttps://www.mmjp.or.jp/pole2/">https://www.mmjp.or.jp/pole2/</a></div>
+              <div class="minitheater-item__map-wrapper6">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+          <!-- 飯田橋ギンレイホール -->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/ginreihall.jpg" alt="飯田橋ギンレイホール">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">飯田橋ギンレイホール</h4>
+              <div class="minitheater-item__address"> 〒162-0825 東京都新宿区神楽坂2-19</div>
+              <div class="minitheater-item__link"><a href="https://www.ginreihall.com/">https://www.ginreihall.com/</a></div>
+              <div class="minitheater-item__map-wrapper7">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+          <!-- 下北沢トリウッド -->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/shimokitazawa.jpg" alt="下北沢トリウッド">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">下北沢トリウッド</h4>
+              <div class="minitheater-item__address"> 〒155-0032 　東京都世田谷区代沢5-32-5-2F</div>
+              <div class="minitheater-item__link"><a href="http://tollywood.jp/">http://tollywood.jp/</a></div>
+              <div class="minitheater-item__map-wrapper8">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+          <!-- 目黒シネマ -->
+          <div class="minitheater-item">
+            <div class="minitheater-item__image-wrapper">
+              <img class="minitheater-item__image" src="images/meguro.jpg" alt="目黒シネマ">
+            </div>
+            <div class="minitheater-item__detail">
+              <h4 class="minitheater-item__title">目黒シネマ</h4>
+              <div class="minitheater-item__address"> 〒141-0021　東京都品川区上大崎2-24-15</div>
+              <div class="minitheater-item__link"><a href="http://www.okura-movie.co.jp/meguro_cinema/now_showing.html">hhttp://www.okura-movie.co.jp/meguro_cinema/now_showing.html</a></div>
+              <div class="minitheater-item__map-wrapper9">
+                <a href="#map-modal" data-toggle="modal" class="btn btn-info minitheater-item__map">MAP</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 映画館リストここまで-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /#minitheaterlist -->
+
+  <!-- MAPモーダル -->
+  <div id="map-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="width: 600px; height: 300px; margin-left: -70px;">
+        <div class="modal-header">
+          <h4 class="modal-title">MAP</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-map-wrapper">
+          <div id="map1" style="width:600px; height:300px;"></div>
+        </div>
+      </div>
+      <div class="modal-body m-1"></div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+  </div>
+  <!-- /#map-modal -->
+
+
+  <!-- Firebaseのセットアップコード（下記のSDKのバージョンは6.2.0） -->
+  <!-- The core Firebase JS SDK is always required and must be listed first 
+    (中心となるFirebase SDKです。常に必要で、最初に記述する必要があります) -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app
+        (使いたいFirebaseサービス用のSDKを加えます) -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+
+  <!-- apiKey -->
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC1hi-nkxIZkCEpkoD8BCdkO_8kuIIaKI8",
+      authDomain: "mini-theater-map.firebaseapp.com",
+      databaseURL: "https://mini-theater-map.firebaseio.com",
+      projectId: "mini-theater-map",
+      storageBucket: "mini-theater-map.appspot.com"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- google map API-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTt8hs86D30C6cLcRKU9GITuqMhbgdScc"></script>
+
+  <!-- jQuery -->
+  <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+
+  <!-- Popper.js, 次に Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
